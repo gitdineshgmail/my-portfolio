@@ -17,21 +17,32 @@
       line-height: 1.6;
       padding-top: 70px; /* navbar fixed height compensation */
     }
-    /* Fixed Navigation Bar */
+
+    /* Fixed Navigation Bar with Logo */
     nav.navbar {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       background-color: #1565c0;
-      padding: 0.75rem 2rem;
+      padding: 0.5rem 2rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       z-index: 1000;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav.navbar .logo {
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+      cursor: default;
     }
     nav.navbar ul {
       list-style: none;
       display: flex;
-      justify-content: center;
       gap: 2rem;
       margin: 0;
       padding: 0;
@@ -52,7 +63,7 @@
       color: white;
       padding: 2rem;
       text-align: center;
-      margin-top: 0; /* remove any margin top */
+      margin-top: 0;
     }
     header h1 {
       font-size: 2.5rem;
@@ -146,8 +157,9 @@
   </style>
 </head>
 <body>
-  <!-- Fixed Navigation Bar -->
+  <!-- Navbar with logo -->
   <nav class="navbar">
+    <div class="logo">Dinesh</div>
     <ul>
       <li><a href="#about">About Me</a></li>
       <li><a href="#services">Services</a></li>
