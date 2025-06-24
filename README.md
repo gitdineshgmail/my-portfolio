@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -158,7 +158,7 @@
   <div id="chatbot">
     <div id="chat-header">Chat with AI</div>
     <div id="chat-body">
-      <p><em>🎤 Voice supported! Click the mic or type your message below.</em></p>
+      <p><em>Hi! I am Dinesh's assintans.🎤 Voice supported! Click the mic or type your message below.</em></p>
     </div>
     <div id="chat-input">
       <input type="text" placeholder="Type a message or use voice..." />
