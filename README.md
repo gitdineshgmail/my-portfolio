@@ -12,8 +12,8 @@
       font-family: 'Segoe UI', sans-serif;
     }
     body {
-      background-color: #121212;
-      color: #e0e0e0;
+      background-color: #ffffff;
+      color: #111111;
       line-height: 1.6;
     }
     header {
@@ -39,10 +39,10 @@
       gap: 1.5rem;
     }
     .card {
-      background: #1f1f1f;
+      background: #f2f2f2;
       border-radius: 10px;
       padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     .portfolio img {
       width: 100%;
@@ -57,8 +57,8 @@
     }
     a.button {
       display: inline-block;
-      background: white;
-      color: #1e88e5;
+      background: #1e88e5;
+      color: white;
       padding: 0.7rem 1.5rem;
       border-radius: 5px;
       margin-top: 1rem;
@@ -69,16 +69,16 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #1f1f1f;
-      border: 1px solid #444;
+      background: #ffffff;
+      border: 1px solid #ccc;
       width: 320px;
       height: 400px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      color: #e0e0e0;
+      color: #111111;
     }
     #chat-header {
       background: #1e88e5;
@@ -94,15 +94,15 @@
     }
     #chat-input {
       display: flex;
-      border-top: 1px solid #333;
+      border-top: 1px solid #ddd;
     }
     #chat-input input {
       flex: 1;
       padding: 0.5rem;
       border: none;
       outline: none;
-      background: #2c2c2c;
-      color: #e0e0e0;
+      background: #f7f7f7;
+      color: #111111;
     }
     #chat-input button {
       padding: 0.5rem 1rem;
