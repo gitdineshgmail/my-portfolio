@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -16,12 +15,44 @@
       background-color: #ffffff;
       color: #111111;
       line-height: 1.6;
+      padding-top: 70px; /* navbar fixed height compensation */
     }
+    /* Fixed Navigation Bar */
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1565c0;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    nav.navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav.navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav.navbar ul li a:hover {
+      color: #ffeb3b;
+    }
+
     header {
       background: #1e88e5;
       color: white;
       padding: 2rem;
       text-align: center;
+      margin-top: 0; /* remove any margin top */
     }
     header h1 {
       font-size: 2.5rem;
@@ -115,17 +146,27 @@
   </style>
 </head>
 <body>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Dinesh</h1>
     <p>Creative Designer & Chatbot Developer</p>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>I specialize in logo design, video editing, chatbot development, and Arduino-based solutions. With over 7 years of experience, I deliver creative and efficient digital solutions.</p>
   </section>
 
-  <section>
+  <section id="services">
     <h2>Services</h2>
     <div class="services">
       <div class="card">🎨 Logo Design</div>
@@ -136,7 +177,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio">
       <div class="card">
@@ -150,7 +191,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact Me</h2>
     <p>If you like my work, feel free to contact me on Fiverr.</p>
     <a href="https://www.fiverr.com/dinesh_dishan?public_mode=true" class="button" target="_blank">Visit My Fiverr</a>
