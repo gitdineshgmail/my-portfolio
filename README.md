@@ -153,7 +153,7 @@
   <section>
     <h2>Contact Me</h2>
     <p>If you like my work, feel free to contact me on Fiverr.</p>
-    <a href="[https://www.fiverr.com/@dinesh_dishan](https://www.fiverr.com/dinesh_dishan?public_mode=true)" class="button" target="_blank">Visit My Fiverr</a>
+    <a href="https://www.fiverr.com/dinesh_dishan?public_mode=true" class="button" target="_blank">Visit My Fiverr</a>
   </section>
 
   <div id="chatbot">
